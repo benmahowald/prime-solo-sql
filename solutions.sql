@@ -23,4 +23,4 @@ SELECT * FROM syntax_practice WHERE account_balance > 100;
 INSERT INTO syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance) VALUES ('ben', 'minneapolis', 0, 4, 1000000);
 
 —9.
-DELETE FROM syntax_practice WHERE city=‘phoenix’ OR city=‘miami’ AND transactions_completed < 5;
+DELETE FROM syntax_practice WHERE transactions_completed < 5 AND (city='phoenix' OR city='miami');
